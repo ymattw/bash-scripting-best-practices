@@ -1,0 +1,20 @@
+/* Customized styles */
+
+body {
+    font-family: "Roboto Slab", "Helvetica";
+}
+
+.remark-container {
+    width: 1024px;
+    font-size: 160%;
+}
+
+.red { color: red; }
+.navy { color: navy; }
+.left { float: left; }
+.right { float: right; }
+
+pre {
+    margin-left: 30px;
+    font-size: 80%;
+}
