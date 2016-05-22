@@ -26,3 +26,7 @@ blockquote {
     color: #888;
     font-style: italic;
 }
+
+h1, h2, h3 {
+    color: purple;
+}

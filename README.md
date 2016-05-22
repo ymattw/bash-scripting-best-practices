@@ -2,8 +2,10 @@
 
 **Outline**
 
-- Overview
-- TODO
-- Appendix
+- Common sense
+- Principles
+- Traps
+- Debugging
+- References
 
-View this [presentation](http://ymattw.github.com/bash-scripting-best-practices) online.
+View this [presentation](https://ymattw.github.com/bash-scripting-best-practices) online.
