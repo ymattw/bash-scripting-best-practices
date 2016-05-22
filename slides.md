@@ -46,9 +46,10 @@ The task was to write a program that would:
 
 ### Knuth's solution
 
-Knuth produced a solution in Pascal that was _**10 pages**_ when printed.  It
-was well designed, and used a novel data structure for managing the word count
-list.
+Knuth produced a solution in Pascal.  It was well designed, thoroughly
+commented and used a novel data structure for managing the word count list.
+
+It was _**10 pages**_ when printed.
 
 ---
 
@@ -75,6 +76,15 @@ uniq -c |
 sort -rn |
 sed ${1}q
 ```
+
+---
+
+### Goal of this presentation
+
+- Know what bash CAN and CAN NOT do
+- Know best practices that make scripting to be run
+- Know traps and pitfalls you want to avoid
+- Know where to get help
 
 ---
 
