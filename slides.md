@@ -395,7 +395,7 @@ conversion for you
 
 ### Function
 
-Function name, use which one?
+Function name, which one to use?
 
 - `function foo`
 - `foo()`

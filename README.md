@@ -1,4 +1,4 @@
-# Slides powered by [remark](https://github.com/gnab/remark) for Bash Scripting Best Practices
+# Slides about Bash scripting best practices
 
 **Outline**
 
@@ -8,4 +8,5 @@
 - Debugging
 - References
 
-View this [presentation](https://ymattw.github.com/bash-scripting-best-practices) online.
+Powered by [remark](https://github.com/gnab/remark). View this
+[presentation](https://ymattw.github.com/bash-scripting-best-practices) online.
