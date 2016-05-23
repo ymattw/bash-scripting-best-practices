@@ -77,6 +77,11 @@ sort -rn |
 sed ${1}q
 ```
 
+Refs:
+
+- [Programming Pearls: A literate program](http://cecs.wright.edu/~pmateti/Courses/4180/Lectures/Examples/Knuth-CWP/cwp-knuth-cacm-1986.pdf)
+- [Blog by Dr. Drang: More shell, less egg](http://www.leancrew.com/all-this/2011/12/more-shell-less-egg/)
+
 ---
 
 ### Goal of this presentation
@@ -88,7 +93,7 @@ sed ${1}q
 
 ---
 
-# Outline
+## Outline
 
 - Common sense
 - Principles
@@ -103,6 +108,53 @@ class: center, middle
 ## Common sense
 
 When to use / not use bash scripting
+
+---
+
+### When to use shell scripting
+
+Shell scripting is efficient when used to
+
+- Do things like a "wrapper" - i.e. "shell"
+- Use existing powerful Unix commands and tools
+- Glue components together
+- Install/start/stop scripts, system admin, automation
+
+---
+
+### When to use shell scripting (cont.)
+
+Why bash?
+
+- Bourne-Again SHell
+- Standard shell installed on almost every distros
+- Still growing (bash 4 v.s. ksh93)
+
+---
+
+### When NOT to use shell scripting
+
+- Speed (performance) is a factor
+- Extensive file operations required (lseek, flock, etc.)
+- Need complex data structures
+- Need direct access to system hardware
+- Need socket I/O
+- Too many arbitrary precision calculation
+
+---
+
+### Some programming common sense
+
+Know your environment
+
+- PATH, env, cwd, compatibility issues
+- Don't run as root as possible as you can
+
+Coding style
+
+- Text width, indention, comments
+- Naming conventions (src tree, variables, functions)
+- No hard code, don't repeat
 
 ---
 
@@ -132,4 +184,3 @@ Troubleshooting techniques
 
 ## References
 
-- http://www.leancrew.com/all-this/2011/12/more-shell-less-egg/
