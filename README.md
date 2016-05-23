@@ -4,7 +4,7 @@
 
 - Common sense
 - Principles
-- Traps
+- Pitfalls
 - Debugging
 - References
 

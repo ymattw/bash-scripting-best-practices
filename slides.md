@@ -7,7 +7,7 @@ class: center, middle
 Matthew Wang
 
 <small>
-Last updated: May 22, 2016<br>
+Last updated: May 23, 2016<br>
 [github.com/ymattw/bash-scripting-best-practices](https://github.com/ymattw/bash-scripting-best-practices)
 </small>
 
@@ -88,7 +88,7 @@ Refs:
 
 - Know what bash CAN and CAN NOT do
 - Know best practices that make scripting to be run
-- Know traps and pitfalls you want to avoid
+- Know pitfalls you want to avoid
 - Know where to get help
 
 ---
@@ -97,7 +97,7 @@ Refs:
 
 - Common sense
 - Principles
-- Traps
+- Pitfalls
 - Debugging
 - References
 
@@ -443,7 +443,7 @@ set -o errexit (set -e)
 grep error $log && echo "failed"    # $? can be non zero
 ! grep error $log || echo "failed"  # Assertion
 do_cleanup || true                  # Ignore failure
-do_something | tee $log             # Use ${PIPESTATUS[0]}
+do_something | tee $log             # You need ${PIPESTATUS[0]}
 ```
 
 Your script also needs to set exit code for caller
@@ -465,15 +465,6 @@ while read LINE; do
 done < textfile
 
 ssh $host tar –C /opt/servers -czf – logs | tar -C /tmp -xzvf -
-```
-
-Piping creates a sub process!
-
-```bash
-echo "$line" | read NAME ID
-echo "$NAME - $ID"              # Oops! Got empty strings
-
-read NAME ID <<< "$line"        # Solution
 ```
 
 ---
@@ -519,9 +510,9 @@ trap "rm -f $TMPFILE" RETURN    # function 'return' handler
 
 class: center, middle
 
-## Traps
+## Pitfalls
 
-Pitfalls to know
+Traps to know
 
 ---
 
@@ -550,6 +541,21 @@ Must explicitly return/exit for these cases
 - `! foo`
 
 Example: change to `! foo || return 1`
+
+---
+
+### Piping creates a sub process!
+
+```bash
+echo "$line" | read NAME ID
+echo "$NAME - $ID"              # Oops! Got empty strings
+```
+
+Solution
+
+```
+read NAME ID <<< "$line"
+```
 
 ---
 
