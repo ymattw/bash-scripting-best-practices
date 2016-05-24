@@ -7,8 +7,8 @@ class: center, middle
 Matthew Wang
 
 <small>
-Last updated: May 23, 2016<br>
-[github.com/ymattw/bash-scripting-best-practices](https://github.com/ymattw/bash-scripting-best-practices)
+Last updated: May 24, 2016<br>
+[github.com/ymattw](https://github.com/ymattw)
 </small>
 
 ---
@@ -141,6 +141,24 @@ Why bash?
 - Need socket I/O
 - Too many arbitrary precision calculation
 - It can be very long (Google suggests less than 200 lines)
+
+---
+
+### Master standard tools
+
+Bash is only a "shell", you need to master standard tools.
+
+Filesystem
+
+- ls, ln, touch, cp, mv, mkdir, rmdir, rm, find, chmod, chown, chgrp, etc.
+
+Process control
+
+- ps, kill, pgrep, pkill, wait, /proc/PID, etc.
+
+Text manipulation
+
+- cat, head, tail, wc, grep, awk, sed, cut, sort, uniq, tee, tr, xargs, etc.
 
 ---
 
@@ -632,5 +650,4 @@ class: center, middle
 
 ## Thank you!
 
-Matthew Wang<br>
-[github.com/ymattw](https://github.com/ymattw)
+[github.com/ymattw/bash-scripting-best-practices](https://github.com/ymattw/bash-scripting-best-practices)
