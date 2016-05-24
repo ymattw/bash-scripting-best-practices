@@ -1,7 +1,12 @@
 /* Customized styles */
 
 body {
-    font-family: "Roboto Slab", "Helvetica";
+    font-family: "Georgia", "Helvetica";
+}
+
+img {
+    border: 1px solid #eee;
+    box-shadow: 5pt 5pt 8pt #eee;
 }
 
 .remark-container {
