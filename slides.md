@@ -332,7 +332,7 @@ plenty of room for it!
 </pre>
 </blockquote>
 
-Ref: page 21 of [The Unix-haters handbook](http://simson.net/ref/ugh.pdf)
+Ref: page 21 of [The Unix-haters handbook](http://web.mit.edu/~simsong/www/ugh.pdf)
 (Translations available on the web)
 
 ---
